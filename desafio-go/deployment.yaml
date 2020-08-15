@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-app
+  template:
+    metadata: 
+      labels:
+        app: go-app
+    spec:
+      containers:
+      - name: fullcycle-devops-desafio-utilizando-k8s
+        image: tiagompalte/fullcycle-devops-desafio-utilizando-k8s:latest
+        ports:
+          - containerPort: 8000
