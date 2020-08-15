@@ -2,4 +2,4 @@ steps:
   - id: 'Rodando Teste'
     name: 'gcr.io/cloud-builders/go'
     args: ['test','fullcycle-devops-desafio-utilizando-k8s']
-    env: ['PROJECT_ROOT=fullcycle-devops-desafio-utilizando-k8s', 'GOPATH=.']
+    env: ['PROJECT_ROOT=fullcycle-devops-desafio-utilizando-k8s', 'GOPATH=desafio-go/']
